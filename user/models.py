@@ -11,4 +11,3 @@ class User(models.Model):
     shippingAddress = models.CharField(max_length=200)
     cart = models.JSONField(blank=True, null=True)
     reviews = models.JSONField(blank=True, null=True)
-    questions = models.JSONField(blank=True, null=True)

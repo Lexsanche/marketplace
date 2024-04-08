@@ -18,6 +18,8 @@ class Item(models.Model):
     stock       = models.BooleanField()
     image       = models.ImageField(upload_to='media/Items', blank=True, null=True)
     created_at  = models.DateTimeField(auto_now_add=True)
+    questions = models.JSONField(blank=True, null=True)
+
     def __str__(self):
         return self.name
 
